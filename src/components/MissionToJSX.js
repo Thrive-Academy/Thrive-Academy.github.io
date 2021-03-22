@@ -1,11 +1,11 @@
-const BuildingBlocksToJSX = (content) => {
+const MissionToJSX = (content) => {
     let mission = content.find((e) => e.feature === 'mission-statement')
 
     return (
         <div>
-            {mission['mission statement']}
+            {mission['content']}
         </div>
     )
 }
 
-export default BuildingBlocksToJSX;
+export default MissionToJSX;

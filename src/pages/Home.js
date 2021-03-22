@@ -1,5 +1,4 @@
 import React from 'react';
-import CardDeck from 'react-bootstrap/CardDeck';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,9 +16,6 @@ export default function Home() {
                 <Row style={{height: '100%', margin: 0, padding: 0}}>
                     <Col sm={4} style={{margin: 0, padding: '5%'}}>
                         <ContentLoader toJsx={MissionToJSX} sheetId={'1dZaxbfnKFBNySOudT8xi3CeW-e2ttD5hoV8o8k5npDM'} tab={'home individual'} />
-                        <div>
-                            Thrive Academy aims to be a transitional day program for young adults and teenagers with special needs in the western suburbs of Des Moines. We plan to offer life skills, social skills, and pre-vocational skills in a safe and nurturing environment.
-                        </div>
                         <Image style={{position: 'absolute', bottom: '5%', width: '70%'}} className="thrive-home-responsive" src="/thrive_logo.png" fluid />
                     </Col>
                     <Col sm={8} style={{height: '100%', margin: 0, padding: 0}}>
@@ -45,9 +41,11 @@ export default function Home() {
 
             <ContentLoader toJsx={ThriveValuesToJSX} sheetId={'1dZaxbfnKFBNySOudT8xi3CeW-e2ttD5hoV8o8k5npDM'} tab={'home values'} />
 
-            <CardDeck className="thrive-card-group-home">
-                <ContentLoader toJsx={BuildingBlocksToJSX} sheetId={'1dZaxbfnKFBNySOudT8xi3CeW-e2ttD5hoV8o8k5npDM'} tab={'home building blocks'} />
-            </CardDeck>
+            <Container className="thrive-about-section">
+                <Row>
+                    <ContentLoader toJsx={BuildingBlocksToJSX} sheetId={'1dZaxbfnKFBNySOudT8xi3CeW-e2ttD5hoV8o8k5npDM'} tab={'home building blocks'} />
+                </Row>
+            </Container>
         </div>
     )
 }
