@@ -34,7 +34,7 @@ function App() {
           </Nav>
           <Nav className="ml-auto thrive-nav-items">
             <Nav.Item className="justify-content-end">
-              <Button variant="light" href="https://venmo.com/Thrive-Academy" target="_blank">Donate</Button>
+              <Button variant="light" href="https://venmo.com/Thrive-Academy" rel="noreferrer" target="_blank">Donate</Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

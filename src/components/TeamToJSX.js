@@ -17,7 +17,7 @@ const TeamToJSX = (content) => {
                     </Card.Text>
                     </Card.Body>
                     <Card.Body>
-                        <Card.Link href={`mailto: ${m.email}`}>{m.email}</Card.Link>
+                        <Card.Link rel="noreferrer" href={`mailto: ${m.email}`}>{m.email}</Card.Link>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">{m.title}</small>
