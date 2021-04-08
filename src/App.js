@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import ContentLoader from './components/ContentLoader';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar bg="dark" className="sidebar" collapseOnSelect expand="lg">
         <Navbar.Brand as={Link} to="/">
           <img
@@ -66,7 +66,7 @@ function App() {
           </Row>
         </Container>
       </Navbar>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
